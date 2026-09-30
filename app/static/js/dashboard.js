@@ -1,0 +1,1 @@
+(function($){"use strict";$(".js-read-all").on("click",function(){window.apiRequest({url:"/api/notifications/read",method:"POST",data:"{}"}).done(d=>{$(".notification-list a").removeClass("unread");window.showToast(d.message)})});})(jQuery);

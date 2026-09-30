@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block title %}没有权限 · 暖爪{% endblock %}{% block content %}<section class="section"><div class="section-shell empty-state"><span class="eyebrow">403 FORBIDDEN</span><h1>这里需要另一种身份</h1><p>当前账号没有访问此功能的权限。</p><a class="button button-dark" href="{{ url_for('main.index') }}">返回首页</a></div></section>{% endblock %}
